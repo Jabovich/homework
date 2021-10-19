@@ -1,0 +1,28 @@
+using System;
+
+namespace min {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      Console.WriteLine("Print yours numbers");
+      double a,b,c;
+      a=Convert.ToDouble(Console.ReadLine());
+      b=Convert.ToDouble(Console.ReadLine());
+      c=Convert.ToDouble(Console.ReadLine());
+      double min=0;
+      if (a <= b && a <= c) { min = a; }
+            else
+            {
+                if (b <= a && b <= c) { min = b; }
+                else
+                {
+                    if (c <= b && c <= a) { min = c; }
+                }
+            }
+    Console.Write("Min number=");
+    Console.Write(min);
+      
+    }
+  }
+}
