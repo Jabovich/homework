@@ -1,0 +1,28 @@
+using System;
+
+namespace max {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      Console.WriteLine("Write yours numbers");
+      double a,b,c;
+      a=Convert.ToDouble(Console.ReadLine());
+      b=Convert.ToDouble(Console.ReadLine());
+      c=Convert.ToDouble(Console.ReadLine());
+      double max=0;
+      if (a >= b && a >= c) { max = a; }
+            else
+            {
+                if (b >= a && b >= c) { max = b; }
+                else
+                {
+                    if (c >= b && c >= a) { max = c; }
+                }
+            }
+    Console.Write("Max number=");
+    Console.Write(max);
+      
+    }
+  }
+}
