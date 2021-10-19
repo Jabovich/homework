@@ -1,0 +1,18 @@
+using System;
+
+namespace Interval {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      Console.WriteLine("Write yours numbers");
+      double a,b,c;
+      a=Convert.ToDouble(Console.ReadLine());
+      b=Convert.ToDouble(Console.ReadLine());
+      c=Convert.ToDouble(Console.ReadLine());
+      if (3>=a && a>=1){Console.WriteLine($"The number {a} abelongs to the interval");}
+      if (3>=b && b>=1){Console.WriteLine($"The number {b} abelongs to the interval");}
+      if (3>=c && c>=1){Console.WriteLine($"The number {c} abelongs to the interval");}
+    }
+  }
+}
