@@ -5,17 +5,27 @@ namespace day {
   class MainClass {
 
     public static void Main (string[] args) {
-  double a;
+  int a;
       Console.WriteLine("Write number");
-      a=Convert.ToDouble(Console.ReadLine());
-      if (a==1) {Console.WriteLine("Monday/Montag");}
-      if (a==2) {Console.WriteLine("Tuesday/Dienstag");}
-      if (a==3) {Console.WriteLine("Wednesday/Mittwoch");}
-      if (a==4) {Console.WriteLine("Thursday/Donnerstag");}
-      if (a==5) {Console.WriteLine("Friday/Freitag");}
-      if (a==6) {Console.WriteLine("Saturday/Samstag");}
-      if (a==7) {Console.WriteLine("Sunday/Sonntag");}
-      if (a>7) {Console.WriteLine("Uncorrect number");}
+      a=Convert.ToInt32(Console.ReadLine());
+      switch (a){
+          case 1:Console.WriteLine("Monday/Montag");
+            break;
+          case 2:Console.WriteLine("Tuesday/Dienstag");
+            break;
+          case 3:Console.WriteLine("Wednesday/Mittwoch");
+            break;
+          case 4:Console.WriteLine("Thursday/Donnerstag");
+            break;
+          case 5:Console.WriteLine("Friday/Freitag");
+            break;
+          case 6:Console.WriteLine("Saturday/Samstag");
+            break;
+          case 7:Console.WriteLine("Sunday/Sonntag");
+            break;
+        default:Console.WriteLine("Uncorrect number");
+            break;
+          }
     }
   }
 }
