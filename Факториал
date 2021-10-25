@@ -1,0 +1,18 @@
+using System;
+
+namespace factorial {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      double p,f=1,g=1;
+      Console.Write("Write number= ");
+      p=Convert.ToDouble(Console.ReadLine());
+      do {
+          f=f*g;
+          g=g+1;
+        }while (g<=p);
+    Console.WriteLine($"The factorial of the number {p} is {f}");
+    }
+  }
+}
