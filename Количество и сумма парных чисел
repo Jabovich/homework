@@ -1,0 +1,21 @@
+using System;
+
+namespace HelloWorld {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      Console.Write("Write N =");
+      int n=Convert.ToInt32(Console.ReadLine());
+      int c=0;
+      int s=0;
+      int g=1;
+      while (g<=n) { 
+        if (g%2==0) {
+          s+=g;
+          c++;}
+        g++;}
+      Console.WriteLine($"The count of paired numbers from 1 to {n} is {c}, their sum is {s}");
+    }
+  }
+}
