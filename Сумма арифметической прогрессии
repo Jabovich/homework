@@ -5,7 +5,7 @@ namespace Sum {
   class MainClass {
 
     public static void Main (string[] args) {
-    Console.WriteLine("Write N");
+    Console.Write("Write N =");
       int n=Convert.ToInt32(Console.ReadLine());
       int s=0;
       for (int i=1; i<=n; i++) {
