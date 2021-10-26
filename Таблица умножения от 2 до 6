@@ -1,0 +1,27 @@
+using System;
+
+namespace table {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      for (int i=1; i<=6; i++) {
+        Console.Write("{0}\t",i);}
+      Console.WriteLine();
+      for (int i=2; i<=12; i=i+2) {
+        Console.Write("{0}\t",i);}
+      Console.WriteLine();
+      for (int i=3; i<=18; i=i+3) {
+        Console.Write("{0}\t",i);}
+      Console.WriteLine();
+      for (int i=4; i<=24; i=i+4) {
+        Console.Write("{0}\t",i);}
+      Console.WriteLine();
+      for (int i=5; i<=30; i=i+5) {
+        Console.Write("{0}\t",i);}
+      Console.WriteLine();
+      for (int i=6; i<=36; i=i+6) {
+        Console.Write("{0}\t",i);}
+    }
+  }
+}
