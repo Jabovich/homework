@@ -1,0 +1,20 @@
+using System;
+
+namespace HelloWorld {
+
+  class MainClass {
+    public static void Main (string[] args) {
+    int sr=0;
+    int sum=0;
+    int[] a = new int[10] {0, 2, 5, 0, 11, 0, 8, 0, 3, 0};
+    for (int i = 0; i < 10; i++){
+      sum+=a[i];}
+    sr=sum/10;
+    for (int i = 0; i < 10; i++){
+      if (a[i]==0){
+        a[i]=sr;}}
+    for (int i = 0; i < 10; i++){
+      Console.Write(a[i] + " ");}
+    }
+  }
+}
