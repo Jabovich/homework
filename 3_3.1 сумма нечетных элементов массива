@@ -1,0 +1,25 @@
+using System;
+
+namespace HelloWorld {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      Console.WriteLine("Enter the size of the array");
+      int n;
+      double sumn=0;
+      n=Convert.ToInt32(Console.ReadLine());
+      Console.WriteLine($"Enter {n} array elements");
+      double[] D = new double[n];
+      for (int i = 0; i < n; i++){
+      D[i] = Convert.ToDouble(Console.ReadLine());}
+      for (int i = 0; i < n; i++){
+        if (D[i]/2!=0){
+          sumn+=D[i];}}
+      Console.WriteLine($"Sum of odd array elements is {sumn}");
+      Console.WriteLine("Array:");
+      for (int i = 0; i < n; i++){
+        Console.WriteLine(D[i]);}
+    }
+  }
+}
