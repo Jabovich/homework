@@ -1,1 +1,38 @@
+using System;
 
+namespace HelloWorld {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+   int n, pos=0, neg=0, ipos=0, ineg=0;
+      Console.Write("Enter the size of the array=");
+      n=Convert.ToInt32(Console.ReadLine());
+      Console.WriteLine($"Enter {n} array elements:");
+      double[] a = new double[n];
+      for (int i = 0; i < n; i++){
+      a[i] = Convert.ToDouble(Console.ReadLine());}
+      for (int i = 0; i < n; i++){
+        if (a[i]>=0){
+          pos++;}
+        else{
+          neg++;}}
+      double[] arr_pos = new double[pos];
+      double[] arr_neg = new double[neg];
+      for (int i = 0; i < n; i++){
+        if (a[i]>=0){
+          arr_pos[ipos]=a[i];
+          ipos++;}
+        else{
+          arr_neg[ineg]=a[i];
+          ineg++;}}
+      Console.WriteLine("Array of positive numbers:"); 
+      for (int b = 0; b <pos; b++){ 
+        Console.Write(arr_pos[b] + " ");} 
+      Console.WriteLine();
+      Console.WriteLine("Array of negative numbers:"); 
+      for (int c = 0; c <neg; c++){ 
+        Console.Write(arr_neg[c] + " ");} 
+    }
+  }
+}
