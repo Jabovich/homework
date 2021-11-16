@@ -1,0 +1,28 @@
+using System;
+using System.Linq;
+
+namespace HelloWorld {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      double min=0, max=0;
+      int n,imin,imax;
+      Console.Write("Enter the size of the array=");
+      n=Convert.ToInt32(Console.ReadLine());
+      Console.WriteLine($"Enter {n} array elements:");
+      double[] a = new double[n];
+      for (int i = 0; i < n; i++){
+      a[i] = Convert.ToDouble(Console.ReadLine());}
+      imin=Array.IndexOf(a,a.Min());
+      imax=Array.IndexOf(a,a.Max());
+      min=a.Min();
+      max=a.Max();
+      a[imin]=max;
+      a[imax]=min;
+      Console.WriteLine("New array:");
+      for (int i = 0; i <n; i++){ 
+        Console.Write(a[i] + " ");}
+    }
+  }
+}
