@@ -1,0 +1,27 @@
+using System;
+
+namespace HelloWorld {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      int n,c=0,count=0;
+      double arf,sum=0, sumc=0;
+      Console.Write("Enter the size of the array=");
+      n=Convert.ToInt32(Console.ReadLine());
+      Console.WriteLine($"Enter {n} array elements:");
+      double[] a = new double[n];
+      for (int i = 0; i < n; i++){
+      a[i] = Convert.ToDouble(Console.ReadLine());}
+      for (int i = 0; i < n; i++){
+        sum+=a[i];
+        c++;}
+      arf=sum/c;
+      for (int i = 0; i < n; i++){
+        if (a[i]>=arf){
+          sumc+=a[i];
+          count++;}}
+      Console.WriteLine($"The sum of numbers greater than the arithmetic mean of all array elements: {sumc}, their number: {count}");
+    }
+  }
+}
