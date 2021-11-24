@@ -1,1 +1,19 @@
+using System;
 
+namespace HelloWorld {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      string st;
+      Console.Write("Enter the string = ");
+      st=Console.ReadLine();
+      st=st.ToLower();
+      st=st[0].ToUpper();
+      for (int i=0; i<st.Length; i++){
+        if (st[i-1] == ' '){
+          st[i].ToUpper;}}
+      Console.WriteLine($"New string: {st}");
+    }
+  }
+}
