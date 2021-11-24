@@ -7,7 +7,6 @@ namespace HelloWorld {
     public static void Main (string[] args) {
       string st;
       char f, l;
-      unst="";
       Console.Write("Enter the string = ");
       st=Console.ReadLine();
       st=st.ToLower();
