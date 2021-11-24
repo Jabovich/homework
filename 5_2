@@ -1,1 +1,21 @@
+using System;
 
+namespace HelloWorld {
+
+  class MainClass {
+
+    public static void Main (string[] args) {
+      string st;
+      char f, l;
+      unst="";
+      Console.Write("Enter the string = ");
+      st=Console.ReadLine();
+      st=st.ToLower();
+      f=st[0];
+      l=st[st.Length - 1];
+      st= st.Remove(st.Length - 1);
+      st= st.Remove(0, 1);
+      Console.WriteLine($"New string: {l}{st}{f}");
+    }
+  }
+}
